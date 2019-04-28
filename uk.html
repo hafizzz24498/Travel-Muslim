@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>United Kingdom</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <style media="screen">
+  @font-face {
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  body {
+width: 100wh;
+height: 90vh;
+color: #fff;
+background: linear-gradient(-45deg, #332c2c, #5e4e4e ,#988787, #d0c5c5);
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+h1,
+h6 {
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: center;
+position: absolute;
+top: 45%;
+right: 0;
+left: 0;
+}
+    .parallax {
+      /* The image used */
+
+      background-image: url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?cs=srgb&dl=bread-color-copyspace-1565982.jpg&fm=jpg');
+
+      /* Full height */
+      height: 50%;
+      width: 105%;
+      margin: -10px  -50px -50px -50px;
+      text-align: center;
+
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+    .navigation{
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      margin:-10px -10px 0px -10px;
+      background-color: #000;
+    }
+    .navigation a{
+      float: right;
+      color: white;
+      padding: 20px 40px 20px 40px;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    }
+    .navigation a:hover{
+      margin: 0px;
+      background-color: #dbdbdb;
+    }
+    .crop{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     border: 3px 3px 3px 3px;
+     border-radius: 10px 10px 10px 10px;
+    }
+    .crop img{
+      width: 100%;
+      height: 110%;
+      margin:-10px -10px -10px -10px;
+      padding: 0px 0px 0px 0px;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .comment form{
+      text-align: center;
+      font-family: "Bahnschrift";
+      color: white ;
+    }
+    .comment form input[type="text"]{
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      text-align: center;
+      font-family: "Bahnschrift";
+      color:#991313 ;
+    }
+    .button p[id="demo"]{
+      margin-left: 3%;
+      font-family: "Bahnschrift";
+      text-align: center;
+      margin-bottom: 25px;
+
+    }
+    .button button{
+      height: 10%;
+      background-color:white;
+      font-family: "Bahnschrift";
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
+
+    .comment input[type="here"] {
+      width: 50%;
+      height: 50%;
+      padding: 05px 10px 50px 10px;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      font-family: "Bahnschrift";
+
+    }
+
+    .footer {
+
+      opacity: -50%;
+      font-size: 50%;
+      width: 120%;
+      margin:-10px -20px 0px -10px;
+      overflow: hidden;
+    }
+    .column img{
+      margin-top: 14px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      border: 3px ;
+      border-radius: 10px;
+    }
+    * {
+ box-sizing: border-box;
+      }
+
+/* Create two equal columns that floats next to each other */
+.column{
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ height: 200px;
+ display: table;
+ clear: both;
+
+}
+
+
+  </style>
+
+  <div class="navigation">
+    <a href="newhome.html">Home</a>
+      <a href="index.html">Destination</a>
+      <a href="Background2.html">Background</a>
+    <a href="aboutUs2.html">About Us</a>
+    <img src="travelmuslim logo.png" align="left" width="100px" height="70px"></a>
+  </div>
+
+
+  <div class="crop">
+    <img src="http://www.steakoutuk.com/img/mobile-gallery/steakout/halal-restaurant-luton.jpg" alt="" >
+  </div>
+<br>
+<br>
+<br>
+<br>
+  <h1 style="text-align:center; font-family:Open Sans; margin:440px -20px 5px -10px;">THE HALAL FOOD PLACES OF UK</h1>
+
+<div class="row" style="background-color:white;  border: 3px; 3px; border-radius: 10px;10px;">
+  <div class="column" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/11/09/4f/b9/selection-of-dishes-at.jpg" alt="Great" width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155.134426290618!2d-0.10457115781470856!3d51.52879350333645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b5b3d2ed341%3A0xa7df7fa7f1596f1e!2sThe+Great+Chase!5e0!3m2!1sen!2smy!4v1555941532139!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px; border-radius: 10px;" allowfullscreen></iframe ></div>
+</div>
+
+  <div class="The Great" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">The Great Chase
+</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="2px" 0px;"=""><b>British, European, Vegetarian Friendly, Vegan Options, Halal
+Birthday meal with family and friends
+We had the cheesecake for dessert which was so delicious.
+Pancakes to die for & fondant was oozing 😋 ... I have travelled extensively...
+But everything else was just amazing including the whipped cheesecake dessert...</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 7998 0640
+</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours:Sun
+11:00 AM - 4:00 PM
+Wed - Thu
+5:30 PM - 10:30 PM
+Fri - Sat
+5:30 PM - 11:00 PM
+Sat
+11:00 AM - 3:00 PM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: 316 St.John Street Clerkenwell, London EC1V 4NT England</h3>
+  </div>
+
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/0e/3e/02/a7/et-beyti-yogurtlu.jpg" alt="Cirrik"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.1055808747267!2d-0.07531029422055069!3d51.551724404196186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761c8c74bfd3c5%3A0x66f3931075a9c8c!2sCirrik+19+Numara+Bos!5e0!3m2!1sen!2smy!4v1555941863051!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Cirrik" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Cirrik 19 Numara Bos</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Local cuisine, Mediterranean, Barbecue, Turkish, Middle Eastern
+... I got the mixed kebab and my friend...
+Great kebab in a friendly restaurant
+... the home-made baklava before, but this was excellent with Turkish coffee.
+The grilled meat is full of flavour.</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 7249 0400</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours: Sun
+12:00 PM - 11:00 PM
+Mon - Thu
+12:00 PM - 11:30 PM
+Fri - Sat
+12:00 PM - 12:00 AM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: 34 Stoke Newington Road, London N16 7XJ England
+</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px" >
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/05/b1/d8/c5/the-banc.jpg" alt="Banc" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.8769950415175!2d-0.08905375031463109!3d51.58627086611349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761c08d74a1ba3%3A0xc41ac769b42e30fa!2sThe+Banc!5e0!3m2!1sen!2smy!4v1555942769195!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Banc" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center; " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">The Banc</h2>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Nice food and a good variety, service was exceptional. Nice sides I personally enjoyed the T-Bone steak which is of a very good portion.
+Perfect steak and perfect services.
+Mains of mixed grills, lamb steak, sea bass - along with crispy fries </b></h3><b>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun
+12:00 PM - 11:00 PM
+Mon - Thu
+3:00 PM - 11:00 PM
+Fri
+2:00 PM - 12:00 AM
+Sat
+12:00 PM - 12:00 AM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:261-263 W Green Rd, West Green, London N15 3BH, UK</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://resizer.otstatic.com/v2/photos/large/25354094.jpg" alt="Maison" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.3892754514328!2d-0.13014815031504146!3d51.51112076609446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d271e7300b%3A0xf8d195f245a682a5!2sMaison+Du+Mezze!5e0!3m2!1sen!2smy!4v1555943027513!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Maison" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Maison Du Mezze</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Lebanese, Mediterranean, Healthy, Middle Eastern, Vegetarian Friendly
+Delicious Lebanese food in the heart of Leicester Square
+Best Halloumi and Feta I have ever tasted
+... in pitta breads with salad, delicious.
+Special occasions, Romantic, Large groups, Business meetings.
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:14 Leicester Square, London WC2H 7NG, UK</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Sun - Sat
+9:00 AM - 2:00 AM</h3>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 3011 1114</h3></div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://f.roocdn.com/images/menus/164/header-image.jpg?width=1200&height=630&auto=webp&format=jpg&fit=crop&v=1473409054" alt="Chamisse" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155.15696156718985!2d-0.1140324679024297!3d51.52217965211214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b490562b5e1%3A0xf2699c439628e7ac!2sChamisse+Lebanese+Restaurant!5e0!3m2!1sen!2smy!4v1555944026095!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+
+  <div class="Chamisse" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Chamisse</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Lebanese, Mediterranean, Middle Eastern, Vegetarian Friendly, Vegan Options
+The best baklava I have ever eaten !!!
+Lots of vegetarian and vegan options available, perfect to share with friends...
+Great lebanese food, great location and...
+It was absolutely delicious- best hummus/ tabbouleh and dips ever </b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+55 Gray's Inn Road, London WC1X 8PP England</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+11:00 AM - 10:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+44 20 7430 0799</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/12/8f/17/42/cafe-che-men.jpg" alt="CheMen" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.1685138900078!2d-0.07619005032145217!3d51.543515466177446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761c93d7199c17%3A0x3dafc0d8dba90839!2sCheMen+Cafe+%26+Restaurant!5e0!3m2!1sen!2smy!4v1555945315670!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="CheMen" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">CheMen Cafe & Restaurant</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Cafe, European, Turkish, Middle Eastern, Mediterranean, Vegetarian Friendly
+... sausage, toast – was good and filli...
+Mix kebab
+Turkish coffee and the Che Men breakfast,come here to use the wifi and people watch because the coffee is delicious.
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:488-490 Kingsland Rd, Dalston, London E8 4AE, UK</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Mon - Fri
+8:00 AM - 11:00 PM
+Sat - Sun
+9:00 AM - 11:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 7241 6835</h3>
+  </div>
+
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/04/bd/ad/af/buffalo-wings-awesome.jpg" alt="StickyWings"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6814747588992!2d-0.07166758175743632!3d51.51824452393588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb59aba51eb%3A0x22aa58fab073243a!2sStickyWings!5e0!3m2!1sen!2smy!4v1555945919524!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="StickyWings" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">StickyWings</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>StickyWings is the UK's only Buffalo Wing shack. It was rated by 'The London Evening Standard' as one of the best three places in London for wings. 2nd place winner x2 in the famous Buffalo wing fest in Buffalo New York 2018, 2nd place for creative sweet aka a famous Strawberry wing and also 2nd place for the traditional buffalo flavour. Making us 2nd best in the world. We serve authentic buffalo wings and other flavours, inc BBQ and Xtra Hot. All chicken is cooked fresh to order and will take around 15/20 minutes. Enjoy with some of our ice cold beers or a cold soft drink. We recommend booking a table as we are small so we get very busy very quickly. We pride ourselves on giving you guys good friendly service and good quality food with great prices. We make all our sauces and dips freshly prepared daily. We have been going for 10 years now and we love that our customers get what we are doing. Follow us on social media to get updates on feature flavours.
+
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+      40 Brick Lane, London E1 6RF England</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Tue - Fri
+12:00 PM - 11:00 PM
+Sat - Sun
+2:00 AM - 11:00 PM</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 7375 0100</h3>
+  </div>
+
+<div class="comment">
+  <form action="/action_page.php" id="userform"> Name: <input type="text" name="username"></form>
+<br>
+   <input type="here" name="comment"
+   onfocus="if(this.value==this.defaultValue)this.value=''"
+   onblur="if(this.value=='')this.value=this.defaultValue"
+   value="Enter the text here...." maxlength="500" />
+</div>
+
+<script>
+//this will submit only if the value is not default
+$("#submitBtn").click(function () {
+    if ($("#valueText").val() === "ENTER VALUE")
+    {
+        alert("please insert a valid value");
+        return false;
+    }
+});
+
+//this will put default value if the field is empty
+$("#valueText").blur(function () {
+    if(this.value == ''){
+        this.value = 'ENTER VALUE';
+    }
+});
+
+ //this will empty the field is the value is the default one
+ $("#valueText").focus(function () {
+    if (this.value == 'ENTER VALUE') {
+        this.value = '';
+    }
+});
+</script>
+
+
+<div class="button">
+  <button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your message is submitted!!";
+}
+</script>
+
+</div>
+
+<div class="parallax">
+  <div class="logo" style="text-align:center; padding-top:150px; padding-left: -20px;">
+    <a href="https://www.facebook.com/"><img src="htmlfb.png" width="60" height="70" hspace="70"></a>
+    <a href="https://twitter.com/"><img src="htmltwitter.png"  width="70" height="70"  hspace="70">
+    <a href="https://www.pinterest.com/"><img src="htmlpin.png"  width="60" height="70"  hspace="70">
+    <a href="https://plus.google.com/"><img src="htmlgoogle.png" width="100" height="70"  hspace="70">
+    <a href="https://www.instagram.com/"><img src="htmlinsta.png" width="70" height="70"  hspace="70">
+  </div>
+</div>
+
+<div style="height:0px;background-color:white;font-size:36px">
+</div>
+
+
+  <div class="footer">
+
+<br>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Russia </title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <style media="screen">
+  @font-face {
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  body {
+width: 100wh;
+height: 90vh;
+color: #fff;
+background: linear-gradient(-45deg, #332c2c, #5e4e4e ,#988787, #d0c5c5);
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+h1,
+h6 {
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: center;
+position: absolute;
+top: 45%;
+right: 0;
+left: 0;
+}
+    .parallax {
+      /* The image used */
+
+      background-image: url('https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+
+      /* Full height */
+      height: 50%;
+      width: 105%;
+      margin: -10px  -50px -50px -50px;
+      text-align: center;
+
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+    .navigation{
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      margin:-10px -10px 0px -10px;
+      background-color: #000;
+    }
+    .navigation a{
+      float: right;
+      color: white;
+      padding: 20px 40px 20px 40px;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    }
+    .navigation a:hover{
+      margin: 0px;
+      background-color: #dbdbdb;
+    }
+    .crop{
+     width: 100%;
+     height: 115%;
+     overflow: hidden;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .crop img{
+      width: 100%;
+      height: -50%;
+      margin: -10px 0px -35px 0px;
+      padding: 0px 0px 0px 0px;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .comment form{
+      text-align: center;
+      font-family: "Bahnschrift";
+      color: white ;
+    }
+    .comment form input[type="text"]{
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      text-align: center;
+      font-family: "Bahnschrift";
+      color:#991313 ;
+    }
+    .button p[id="demo"]{
+      margin-left: 3%;
+      font-family: "Bahnschrift";
+      text-align: center;
+      margin-bottom: 25px;
+
+    }
+    .button button{
+      height: 10%;
+      background-color:white;
+      font-family: "Bahnschrift";
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
+
+    .comment input[type="here"] {
+      width: 50%;
+      height: 50%;
+      padding: 05px 10px 50px 10px;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      font-family: "Bahnschrift";
+
+    }
+
+    .footer {
+
+      opacity: -50%;
+      font-size: 50%;
+      width: 120%;
+      margin:-10px -20px 0px -10px;
+      overflow: hidden;
+    }
+    .column img{
+      margin-top: 14px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      border: 3px ;
+      border-radius: 10px;
+    }
+    * {
+ box-sizing: border-box;
+      }
+
+/* Create two equal columns that floats next to each other */
+.column{
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ height: 200px;
+ display: table;
+ clear: both;
+
+}
+
+
+  </style>
+
+
+  <div class="navigation">
+    <a href="newhome.html">Home</a>
+      <a href="index.html">Destination</a>
+      <a href="Background2.html">Background</a>
+    <a href="aboutUs2.html">About Us</a>
+    <img src="travelmuslim logo.png" align="left" width="100px" height="70px"></a>
+  </div>
+
+
+  <div class="crop">
+    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" >
+  </div>
+<br>
+<br>
+<br>
+<br>
+<h1 style="text-align:center; font-family:Palatino; margin:560px -20px 5px -10px;">THE HALAL FOOD PLACES OF RUSSIA</h1>
+
+<div class="row" style="background-color:white;">
+<div class="column" style="background-color:white;">
+  <img id="myImg" src="https://images.pexels.com/photos/460530/pexels-photo-460530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Uryuk Restaurant" width="800" height="550">
+</div>
+<div class="column" id="googleMap">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9275315.807952862!2d34.312197707171414!3d55.41939739808467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1b8b7592e9%3A0x50a06bbb930d1b25!2sUryuk!5e0!3m2!1sen!2smy!4v1556361370337!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+</div>
+
+<div class="Uryuk Restaurant" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Uryuk Restaurant</h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="2px" 0px;"=""><b>Uryuk is a classic Russian café-style restaurant that serves some of the best Uzbek food. If you have never tried food local to Uzbekistan, Tajikistan, Armenia, Georgia and the likes, a visit to Uryuk is a must. With various outlets across Moscow, you just have to check Google maps for the one closest to you. Inexpensive food, top service, a warm atmosphere that allows cosy seating for groups are just some of the reasons why these cafés are so populated.🤗</b></h3><b>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +7 495 699-71-21 </h3>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours:Daily 11:00AM - 06:00AM</h3>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: Москва,, Пушкинская площадь, д.5, Moscow, Russia, 127006 </h3>
+</div>
+
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://media.halaltrip.com/other/wp-content/uploads/2018/01/3_1516779465.jpg" alt="Chaikhana Shurpa "width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.1660118330706!2d37.52915941593196!3d55.79035518056345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54997bad11b7d%3A0x63ddaaf02b1d888e!2sAviapark!5e0!3m2!1sen!2smy!4v1556362150575!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+<div class="Chaikhana Shurpa " style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Chaikhana Shurpa </h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Description
+
+The best mall restaurant in Moscow
+CrescentRating
+
+CrescentRating: Not CrescentRated
+Cuisine
+
+Middle Eastern, Eastern European, Vegetarian Friendly
+Halal Assurance
+
+Halal assurance by restaurant staff
+Suitable For
+
+    Lunch Snack Family
+
+ 🤗</b></h3><b>
+
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours: Daily 10.30am to 9pm</h3>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:  Aviakonstruktora Mikoyana St., 10 | Mall AviaPark, Moscow 125252, Russia</h3>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+7 495 646-02-20 </h3>
+</div>
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://media.halaltrip.com/other/wp-content/uploads/2018/01/5_1516779573.jpg" alt="Vai Me! " width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.6519793731713!2d100.5487558506246!3d13.799841190268854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c1574719ad3%3A0x3d85954fa8a03799!2sSaman+Islam!5e0!3m2!1sth!2sth!4v1555345056951!5m2!1sth!2sth" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+<div class="Vai Me!" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center; " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Vai Me!</h2>
+
+<h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>If you haven’t made it to Georgia yet (the country, not the American state) fear not because the food served here is as good as that in Georgia. Light and simple dishes are made to perfection and they offer great vegetarian options as well. Good food married with even better service and a friendly atmosphere makes Vai Me! a must-visit.</b></h3><b>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Saturdays to Sundays 9am to 7pm</h3>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: Bolshoi Ovchinnikovsky lane., 16, Moscow, Russia, 115184</h3>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+7 495 782-27-74 </h3>
+</div>
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://media.halaltrip.com/other/wp-content/uploads/2018/01/Khayal_1516779248.jpg" alt="Khalyal Barbekyu " width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.1474858877737!2d37.53181035126582!3d55.79067688046809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549bdd02ffff9%3A0xd4d4e324aa3ca88e!2sUlitsa+Aviakonstruktora+Mikoyana%2C+10%2C+Moskva%2C+Russia%2C+125167!5e0!3m2!1sen!2smy!4v1556363055731!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+<div class="Khalyal Barbekyu " style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""> Khalyal Barbekyu </h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Tired of proper meals and just want some fast food? Khalyal Barbekyu is your place to go! Despite the tag “fast food”, everything is made to order so you can expect fresh meats and meals. Add the low prices, unlimited bread and great service.</b></h3><b>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: Aviakonstruktora Mikoyana, 10, Moscow 125252, Russia </h3>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Mon-Fri: 10am – 10pm
+Sat – Sun: 10am – 8pm
+</h3>
+
+</div>
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Tajj Mahal " width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2928756987967!2d37.60327175126415!3d55.75341438045807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4e169ef043%3A0xf8fc8efcc20f8ed8!2sVremena+Goda!5e0!3m2!1sen!2smy!4v1556363400546!5m2!1sen!2smy"style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+</div>
+
+
+<div class="Tajj Mahal " style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Tajj Mahal </h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>The different outlets offer different ambiences with the one at Arbat Street being more crowded and noisy and the other outlet being more relaxed. Take your pick depending on your mood and company because it will have an impact on your experience. The restaurant, like many others, allows smoking shisha, and the eatery at Arbat Street is said to be more smoke-filled than the other. Consider yourself warned! As the name suggests, Tajj Mahal offers Indian cuisine as well as Pakistani, Middle Eastern, Japanese and European. Their Uzbek food, however, is great, and the interiors always get a special mention, as does the service.😋</b></h3><b>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:Boshoy Kislovskiy St., 1/12, Moscow 125009, Russia</h3>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sat – Sunday, 10am – 10pm, Fri 2pm – 10pm</h3>
+   <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +7 495 107-91-70 </h3>
+</div>
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="
+Mr. Livanets" width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9416171672488!2d100.56381825062378!3d13.72198449031957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f057df16db5%3A0x6f2b758f208de92c!2sNadimos!5e0!3m2!1sen!2smy!4v1555346697977!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+<div class="
+Mr. Livanets" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">
+Mr. Livanets</h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>
+
+Lebanese cuisine in the heart of Moscow
+CrescentRating
+
+CrescentRating: Not CrescentRated
+Cuisine
+
+Lebanese, Middle Eastern, Halal
+Halal Assurance
+
+Halal assurance by restaurant staff
+Suitable For
+
+    Lunch Dinner
+
+
+</b></h3><b>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:Glinishchevskiy per., 3, Moskva, Russia, 125009 </h3>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Daily 10:30AM to 11:30PM</h3>
+
+</div>
+
+<div class="row" style="background-color:white;">
+  <div class="column"; style="background-color:white;">
+    <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/16/d5/17/6b/photo1jpg.jpg" alt="Bardak"width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d4490.123210973742!2d37.62955332883744!3d55.75743202221829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d55.757403999999994!2d37.63426!5e0!3m2!1sen!2smy!4v1556363998178!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px solid brown;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+<div class="Bardak" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+  <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Bardak</h2>
+  <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>CUISINES
+Cafe, Turkish, Middle Eastern, Eastern European
+Special Diets
+Vegetarian Friendly, Vegan Options, Halal
+
+</b></h3><b>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:Maroseyka St., House 6/8 Bldg. 1 Metro Kitai-Gorod, Moscow 101000 Russia</h3>
+  <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: 10am-10pm daily</h3>
+</div>
+
+<div class="comment">
+<form action="/action_page.php" id="userform"> Name: <input type="text" name="username"></form>
+<br>
+ <input type="here" name="comment"
+ onfocus="if(this.value==this.defaultValue)this.value=''"
+ onblur="if(this.value=='')this.value=this.defaultValue"
+ value="Enter the text here...." maxlength="500" />
+</div>
+
+<script>
+//this will submit only if the value is not default
+$("#submitBtn").click(function () {
+    if ($("#valueText").val() === "ENTER VALUE")
+    {
+        alert("please insert a valid value");
+        return false;
+    }
+});
+
+//this will put default value if the field is empty
+$("#valueText").blur(function () {
+    if(this.value == ''){
+        this.value = 'ENTER VALUE';
+    }
+});
+
+ //this will empty the field is the value is the default one
+ $("#valueText").focus(function () {
+    if (this.value == 'ENTER VALUE') {
+        this.value = '';
+    }
+});
+</script>
+
+
+<div class="button">
+  <button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your message is submitted!!";
+}
+</script>
+
+</div>
+
+<div class="parallax">
+  <div class="logo" style="text-align:center; padding-top:150px; padding-left: -20px;">
+    <a href="https://www.facebook.com/"><img src="htmlfb.png" width="60" height="70" hspace="70"></a>
+    <a href="https://twitter.com/"><img src="htmltwitter.png"  width="70" height="70"  hspace="70">
+    <a href="https://www.pinterest.com/"><img src="htmlpin.png"  width="60" height="70"  hspace="70">
+    <a href="https://plus.google.com/"><img src="htmlgoogle.png" width="100" height="70"  hspace="70">
+    <a href="https://www.instagram.com/"><img src="htmlinsta.png" width="70" height="70"  hspace="70">
+  </div>
+</div>
+
+<div style="height:0px;background-color:white;font-size:36px">
+</div>
+
+
+  <div class="footer">
+
+<br>
+  </body>
+</html>

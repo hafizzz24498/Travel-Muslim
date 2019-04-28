@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>United States</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <style media="screen">
+  @font-face {
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  body {
+width: 100wh;
+height: 90vh;
+color: #fff;
+background: linear-gradient(-45deg, #332c2c, #5e4e4e ,#988787, #d0c5c5);
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+h1,
+h6 {
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: center;
+position: absolute;
+top: 45%;
+right: 0;
+left: 0;
+}
+    .parallax {
+      /* The image used */
+
+      background-image: url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?cs=srgb&dl=bread-color-copyspace-1565982.jpg&fm=jpg');
+
+      /* Full height */
+      height: 50%;
+      width: 105%;
+      margin: -10px  -50px -50px -50px;
+      text-align: center;
+
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+    .navigation{
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      margin:-10px -10px 0px -10px;
+      background-color: #000;
+    }
+    .navigation a{
+      float: right;
+      color: white;
+      padding: 20px 40px 20px 40px;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    }
+    .navigation a:hover{
+      margin: 0px;
+      background-color: #dbdbdb;
+    }
+    .crop{
+     width: 100%;
+      height: 100%;
+     overflow: hidden;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .crop img{
+      width: 100%;
+      height: 120%;
+      margin: -10px 0px -35px 0px;
+      padding: 0px 0px 0px 0px;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .comment form{
+      text-align: center;
+      font-family: "Bahnschrift";
+      color: black ;
+    }
+    .comment form input[type="text"]{
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      text-align: center;
+      font-family: "Bahnschrift";
+      color:#991313 ;
+    }
+    .button p[id="demo"]{
+      margin-left: 3%;
+      font-family: "Bahnschrift";
+      text-align: center;
+      margin-bottom: 25px;
+
+    }
+    .button button{
+      height: 10%;
+      background-color:white;
+      font-family: "Bahnschrift";
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
+
+    .comment input[type="here"] {
+      width: 50%;
+      height: 50%;
+      padding: 05px 10px 50px 10px;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      font-family: "Bahnschrift";
+
+    }
+
+
+    .column img{
+      margin-top: 14px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      border: 3px ;
+      border-radius: 10px;
+    }
+    * {
+ box-sizing: border-box;
+      }
+
+/* Create two equal columns that floats next to each other */
+.column{
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ height: 200px;
+ display: table;
+ clear: both;
+
+}
+
+
+  </style>
+
+
+  <div class="navigation">
+    <a href="newhome.html">Home</a>
+      <a href="index.html">Destination</a>
+      <a href="Background2.html">Background</a>
+    <a href="aboutUs2.html">About Us</a>
+    <img src="travelmuslim logo.png" align="left" width="100px" height="70px"></a>
+  </div>
+
+
+  <div class="crop">
+    <img src="https://i0.wp.com/worldoffoodanddrink.worldtravelguide.net/wp-content/uploads/2018/07/shu-American-food-421470679-Brent-Hofacker-1440x823.jpg?fit=1440%2C823&ssl=1" alt="" >
+  </div>
+<br>
+<br>
+<br>
+<br>
+  <h1 style="text-align:center; font-family:Open Sans; margin:440px -20px 5px -10px;">THE HALAL FOOD PLACES OF USA</h1>
+
+<div class="row" style="background-color:white;  border: 3px; 3px; border-radius: 10px;10px;">
+  <div class="column" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/13/73/e9/c8/mixed-grill.jpg" alt="SevenHill" width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.65894446740276!2d-73.98125765049632!3d40.77804376557397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588a380885f1%3A0x502a587a844f5a41!2sSeven+Hills+Mediterranean+Grill!5e0!3m2!1sen!2smy!4v1555857363242!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px; border-radius: 10px;" allowfullscreen></iframe ></div>
+</div>
+
+  <div class="SevenHill" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Seven Hills Mediterranean Grill
+</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="2px" 0px;"=""><b>Mediterranean, Middle Eastern, Vegan Options, Halal, Vegetarian Friendly
+Best baklava ever!
+Best Place for Mediterranean Food in NYC
+The chicken shawarma Hummus and Greek salad plate to take out was truly delic...
+Every week for veg falafel or chicken shawarma!</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 212-207-8302</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours:Mon - Fri
+11:30 AM - 8:00 PM
+  Sat
+11:30 AM - 6:00 PM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+154 E 55th St, New York City, NY 10022-4513</h3>
+  </div>
+
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://lh5.googleusercontent.com/p/AF1QipNtEP_xvVeQ2cGhks4hzyObEoJ2gxJoG6h2F6uC=w408-h314-k-no" alt="Mamoun"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387597.2332351904!2d-74.3548730056268!3d40.627742134655364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8bb91865f939e8c!2sMamoun&#39;s+Falafel!5e0!3m2!1sen!2smy!4v1555858275591!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Yana" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Mamoun's Falafel</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Fast Food, Mediterranean, Middle Eastern, Lebanese, Vegan Options
+Awesome Falafel!
+We visited this restaurant twice in the...
+Nice Baklava and Falafal..!
+Best Shawarma around hands down!</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 201-656-0310</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours: Sun
+10:00 AM - 1:00 AM
+Mon - Wed
+10:00 AM - 2:00 AM
+Thu
+10:00 AM - 3:00 AM
+Fri - Sat
+10:00 AM - 5:00 AM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+502 Washington St, Hoboken, NJ 07030-4991</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px" >
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/03/0e/5c/f1/naya-express.jpg" alt="Naya" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d324.6178940988116!2d-73.97521067953497!3d40.7592233220239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80be7cdbc0f2c929!2sNAYA!5e0!3m2!1sen!2smy!4v1555859053351!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Naya" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center; " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Naya Express</h2>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Lebanese, Fast Food, Mediterranean, Middle Eastern, Vegetarian Friendly
+enjoyed the fresh hummus and the beef shawarma.
+mediterranean food it is very tasty- I recommend chicken shish ke...
+If you are looking for a super Shawarma sandwich or a fast Lebanese fattoush...</b></h3><b>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Mon - Fri
+7:00 AM - 10:00 PM
+Sat
+12:00 AM - 8:00 PM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+688 3rd Ave Between E 43rd St and E 44th St, New York City, NY 10017-4020</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/09/92/3a/15/20151120-214019-largejpg.jpg" alt=" Sahara" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.7339068083504!2d-73.97912453584495!3d40.741441965905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259093d67bf7b%3A0x491e09142adf18be!2sSahara&#39;s!5e0!3m2!1sen!2smy!4v1555859314034!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class=" Sahara" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""> Sahara's Turkish Cuisine</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>PRICE RANGE
+MYR 41 - MYR 83
+CUISINES
+Mediterranean, Turkish, Middle Eastern
+SPECIAL DIETS
+Vegetarian Friendly, Halal</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: 513 2nd Ave Btwn 28&29 streets, New York City, NY 10016-8642</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Sun - Sat
+11:00 AM - 11:00 PMs</h3>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 212-532-7589</h3></div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/12/4f/75/54/getlstd-property-photo.jpg" alt="Amir" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.4966047440767!2d-73.96551995050302!3d40.80659066565199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63c0148d4d1%3A0xfcce048c47057fe7!2sAmir&#39;s+Falafel!5e0!3m2!1sen!2smy!4v1555859708300!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+
+  </div>
+
+
+  <div class="Amir" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Amir's</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>PRICE RANGE
+   MYR 41 - MYR 83
+CUISINES
+   Mediterranean
+SPECIAL DIETS
+   Halal
+MEALS
+   Lunch, Dinner
+FEATURES
+   Delivery, Reservations, Seating</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+2911 Broadway Between W 113rd & 114th St, New York City, NY 10025-7823</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+11:00 AM - 11:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 212-749-7500</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/14/cb/70/fa/patial-signature-lobster.jpg" alt="Patiala" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.1945509580048!2d-73.99704970613406!3d40.75346596201995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b26ac32e49%3A0x440d91f39d4983e6!2sPatiala+Indian+Grill!5e0!3m2!1sen!2smy!4v1555860529242!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Patiala" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Patiala Indian Grill</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Indian, Vegetarian Friendly, Vegan Options, Halal
+Wonderful Indian food!
+Basic , no frills, and delicious authentic Indian fare!
+Amazingly authentic and brilliant Goat Curry.
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:
+371 W 34th St # 9AVE, New York City, NY 10001-2402</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+11:00 AM - 11:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 212-564-8255</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/aa/2f/22/combination-platter.jpg" alt="Nimbooda"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.22554759191354!2d-73.96439895050688!3d40.678278965674316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba15f46939d%3A0xa0d4d2f1719aa137!2sNimbooda!5e0!3m2!1sen!2smy!4v1555861196166!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+
+    </div>
+
+  <div class="Nimbooda" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Nimbooda</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>PRICE RANGE
+MYR 62 - MYR 103
+CUISINES
+Indian, Asian, Healthy, Middle Eastern, Pakistani, Bangladeshi
+SPECIAL DIETS
+Vegetarian Friendly, Vegan Options, Halal
+
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+664 Washington Ave, Brooklyn, NY 11238-3616</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Sun - Thu
+11:30 AM - 10:30 PM
+Fri - Sat
+11:30 AM - 11:00 PM</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +1 718-622-4616</h3>
+  </div>
+
+<div class="comment">
+  <form action="/action_page.php" id="userform"> Name: <input type="text" name="username"></form>
+<br>
+   <input type="here" name="comment"
+   onfocus="if(this.value==this.defaultValue)this.value=''"
+   onblur="if(this.value=='')this.value=this.defaultValue"
+   value="Enter the text here...." maxlength="500" />
+</div>
+
+<script>
+//this will submit only if the value is not default
+$("#submitBtn").click(function () {
+    if ($("#valueText").val() === "ENTER VALUE")
+    {
+        alert("please insert a valid value");
+        return false;
+    }
+});
+
+//this will put default value if the field is empty
+$("#valueText").blur(function () {
+    if(this.value == ''){
+        this.value = 'ENTER VALUE';
+    }
+});
+
+ //this will empty the field is the value is the default one
+ $("#valueText").focus(function () {
+    if (this.value == 'ENTER VALUE') {
+        this.value = '';
+    }
+});
+</script>
+
+
+<div class="button">
+  <button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your message is submitted!!";
+}
+</script>
+
+</div>
+
+<div class="parallax">
+  <div class="logo" style="text-align:center; padding-top:150px; padding-left: -20px;">
+    <a href="https://www.facebook.com/"><img src="htmlfb.png" width="60" height="70" hspace="70"></a>
+    <a href="https://twitter.com/"><img src="htmltwitter.png"  width="70" height="70"  hspace="70">
+    <a href="https://www.pinterest.com/"><img src="htmlpin.png"  width="60" height="70"  hspace="70">
+    <a href="https://plus.google.com/"><img src="htmlgoogle.png" width="100" height="70"  hspace="70">
+    <a href="https://www.instagram.com/"><img src="htmlinsta.png" width="70" height="70"  hspace="70">
+  </div>
+</div>
+
+<div style="height:0px;background-color:white;font-size:36px">
+</div>
+
+
+
+
+  <div class="footer">
+
+
+
+<br>
+  </body>
+</html>

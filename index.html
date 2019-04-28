@@ -1,0 +1,736 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Destination </title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<style>
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.slide__text-desc {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #000;
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+.Heaad {
+  background-color: #000;
+  position: relative;
+}
+
+.Heaad ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+
+.Heaad li {
+  float: right;
+}
+
+.Heaad li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.Heaad li a:hover {
+  background-color: #dbdbdb;
+}
+
+.slider-container {
+  position: relative;
+  height: 80%;
+  margin:auto;
+  user-select: none;
+  cursor: all-scroll;
+}
+
+.slider-control {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  opacity: 0;
+}
+.slider-control.inactive:hover {
+  cursor: auto;
+}
+.slider-control:not(.inactive):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider-control.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+.slider-control.right {
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.slider-pagi {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  font-size: 0;
+  list-style-type: none;
+}
+.slider-pagi__elem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.slider-pagi__elem:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  transform: translate(-50%, -50%) scale(0);
+}
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+.slider.animating {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+.slider.animating .slide__bg {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  will-change: transform;
+}
+.slide:nth-child(1) {
+  left: 0;
+}
+.slide:nth-child(1) .slide__bg {
+  left: 0;
+  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=carrots-cucumber-delicious-1640777.jpg&fm=jpg");
+}
+.slide:nth-child(1) .slide__overlay-path {
+  fill: #e99c7e;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(1) .slide__text {
+    background-color: rgba(233, 156, 126, 0.8);
+  }
+}
+.slide:nth-child(2) {
+  left: 100%;
+}
+.slide:nth-child(2) .slide__bg {
+  left: -50%;
+  background-image: url("https://images.pexels.com/photos/359993/pexels-photo-359993.jpeg?cs=srgb&dl=blur-close-up-delicious-359993.jpg&fm=jpg");
+}
+.slide:nth-child(2) .slide__overlay-path {
+  fill: #303030;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(2) .slide__text {
+    background-color: rgba(48, 48, 48, 0.8);
+  }
+}
+.slide:nth-child(3) {
+  left: 200%;
+}
+.slide:nth-child(3) .slide__bg {
+  left: -100%;
+  background-image: url("https://images.pexels.com/photos/688804/pexels-photo-688804.jpeg?cs=srgb&dl=bowl-chicken-cuisine-688804.jpg&fm=jpg");
+}
+.slide:nth-child(3) .slide__overlay-path {
+  fill: #29424a;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(3) .slide__text {
+    background-color: rgba(41, 66, 74, 0.8);
+  }
+}
+.slide:nth-child(4) {
+  left: 300%;
+}
+.slide:nth-child(4) .slide__bg {
+  left: -150%;
+  background-image: url("https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?cs=srgb&dl=blur-close-up-cuisine-723198.jpg&fm=jpg");
+}
+.slide:nth-child(4) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(4) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(5) {
+  left: 400%;
+}
+.slide:nth-child(5) .slide__bg {
+  left: -200%;
+  background-image: url("https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=cheese-circle-close-up-803290.jpg&fm=jpg");
+}
+.slide:nth-child(5) .slide__overlay-path {
+  fill: #75a580;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(5) .slide__text {
+    background-color: rgba(233, 156, 126, 0.8);
+  }
+}
+
+.slide:nth-child(6) {
+  left: 500%;
+}
+.slide:nth-child(6) .slide__bg {
+  left: -250%;
+  background-image: url("https://images.pexels.com/photos/58722/pexels-photo-58722.jpeg?cs=srgb&dl=cheese-dish-food-58722.jpg&fm=jpg");
+}
+.slide:nth-child(6) .slide__overlay-path {
+  fill: #926750;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(6) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(7) {
+  left: 600%;
+}
+.slide:nth-child(7) .slide__bg {
+  left: -300%;
+  background-image: url("https://images.pexels.com/photos/8572/food-chicken-meat-outdoors.jpg?cs=srgb&dl=barbecue-bbq-chicken-8572.jpg&fm=jpg");
+}
+.slide:nth-child(7) .slide__overlay-path {
+  fill: #506a8d;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(7) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(8) {
+  left: 700%;
+}
+.slide:nth-child(8) .slide__bg {
+  left: -350%;
+  background-image: url("https://images.pexels.com/photos/62097/pexels-photo-62097.jpeg?cs=srgb&dl=bread-chip-close-up-62097.jpg&fm=jpg");
+}
+.slide:nth-child(8) .slide__overlay-path {
+  fill: #f0a03c;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(8) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(9) {
+  left: 800%;
+}
+.slide:nth-child(9) .slide__bg {
+  left: -400%;
+  background-image: url("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=blur-breakfast-close-up-376464.jpg&fm=jpg");
+}
+.slide:nth-child(9) .slide__overlay-path {
+  fill: #ddb1b1;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(9) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(10) {
+  left: 900%;
+}
+.slide:nth-child(10) .slide__bg {
+  left: -450%;
+  background-image: url("https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?cs=srgb&dl=beef-delicious-dinner-769289.jpg&fm=jpg");
+}
+.slide:nth-child(10) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(10) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  min-height: 810px;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+  will-change: transform, opacity;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__overlay {
+    display: none;
+  }
+}
+.slide__overlay path {
+  opacity: 0.8;
+}
+.slide__text {
+  position: absolute;
+  width: 25%;
+  bottom: 15%;
+  left: 10%;
+  color: #fff;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+  will-change: transform, opacity;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__text {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    transform: translateY(50%);
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    padding: 0 1rem;
+  }
+}
+.slide__text-heading1 {
+  font-family: "Polar", Helvetica, Arial, sans-serif;
+  font-size: 7rem;
+  margin-bottom: 5rem;
+}
+
+.slide__text-heading {
+  font-family: "Polar", Helvetica, Arial, sans-serif;
+  font-size: 10rem;
+  margin-bottom: 15rem;
+}
+@media (max-width: 991px) {
+  .slide__text-heading {
+    line-height: 10rem;
+    font-size: 3.5rem;
+  }
+}
+.slide__text-desc {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .slide__text-desc {
+    display: none;
+  }
+}
+.slide__text-link {
+  z-index: 5;
+  display: inline-block;
+  color: white;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  perspective: 1000px;
+}
+@media (max-width: 991px) {
+  .slide__text-link {
+    margin: -2rem 0 8rem;
+  }
+}
+.slide__text-link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: 50% 100%;
+  transform: rotateX(-85deg);
+  transition: transform 0.3s;
+  will-change: transform;
+}
+.slide__text-link:hover:before {
+  transform: rotateX(0);
+}
+
+.footer{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color:#fff;
+  text-align:center;
+  font-size:60px;
+  padding-top: 10px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  var $slider = $(".slider"),
+      $slideBGs = $(".slide__bg"),
+      diff = 0,
+      curSlide = 0,
+      numOfSlides = $(".slide").length-1,
+      animating = false,
+      animTime = 500,
+      autoSlideTimeout,
+      autoSlideDelay = 3000,
+      $pagination = $(".slider-pagi");
+
+  function createBullets() {
+    for (var i = 0; i < numOfSlides+1; i++) {
+      var $li = $("<li class='slider-pagi__elem'></li>");
+      $li.addClass("slider-pagi__elem-"+i).data("page", i);
+      if (!i) $li.addClass("active");
+      $pagination.append($li);
+    }
+  };
+
+  createBullets();
+
+  function manageControls() {
+    $(".slider-control").removeClass("inactive");
+    if (!curSlide) $(".slider-control.left").addClass("inactive");
+    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+  };
+
+  function autoSlide() {
+    autoSlideTimeout = setTimeout(function() {
+      curSlide++;
+      if (curSlide > numOfSlides) curSlide = 0;
+      changeSlides();
+    }, autoSlideDelay);
+  };
+
+  autoSlide();
+
+  function changeSlides(instant) {
+    if (!instant) {
+      animating = true;
+      manageControls();
+      $slider.addClass("animating");
+      $slider.css("top");
+      $(".slide").removeClass("active");
+      $(".slide-"+curSlide).addClass("active");
+      setTimeout(function() {
+        $slider.removeClass("animating");
+        animating = false;
+      }, animTime);
+    }
+    window.clearTimeout(autoSlideTimeout);
+    $(".slider-pagi__elem").removeClass("active");
+    $(".slider-pagi__elem-"+curSlide).addClass("active");
+    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+    diff = 0;
+    autoSlide();
+  }
+
+  function navigateLeft() {
+    if (animating) return;
+    if (curSlide > 0) curSlide--;
+    changeSlides();
+  }
+
+  function navigateRight() {
+    if (animating) return;
+    if (curSlide < numOfSlides) curSlide++;
+    changeSlides();
+  }
+
+  $(document).on("mousedown touchstart", ".slider", function(e) {
+    if (animating) return;
+    window.clearTimeout(autoSlideTimeout);
+    var startX = e.pageX || e.originalEvent.touches[0].pageX,
+        winW = $(window).width();
+    diff = 0;
+
+    $(document).on("mousemove touchmove", function(e) {
+      var x = e.pageX || e.originalEvent.touches[0].pageX;
+      diff = (startX - x) / winW * 70;
+      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+    });
+  });
+
+  $(document).on("mouseup touchend", function(e) {
+    $(document).off("mousemove touchmove");
+    if (animating) return;
+    if (!diff) {
+      changeSlides(true);
+      return;
+    }
+    if (diff > -8 && diff < 8) {
+      changeSlides();
+      return;
+    }
+    if (diff <= -8) {
+      navigateLeft();
+    }
+    if (diff >= 8) {
+      navigateRight();
+    }
+  });
+
+  $(document).on("click", ".slider-control", function() {
+    if ($(this).hasClass("left")) {
+      navigateLeft();
+    } else {
+      navigateRight();
+    }
+  });
+
+  $(document).on("click", ".slider-pagi__elem", function() {
+    curSlide = $(this).data("page");
+    changeSlides();
+  });
+
+});
+</script>
+</head>
+
+<body>
+
+  <div class="Heaad">
+    <ul>
+    <div class="logo"> <a href="newhome.html"> <img src="travelmuslim.png" align="left" width="100px" height="70px"></a> </div>
+    <li><a href="newhome.html">Home</a></li>
+    <li><a href="index.html">Destination</a></li>
+    <li><a href="Background2.html">Background</a></li>
+    <li><a href="aboutUs2.html">About Us</a></li>
+    </ul>
+  </div>
+
+<div class="slider-container">
+  <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide slide-0 active">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading1" style="font-family: 'Open Sans Condensed', sans-serif;"> Any country <br> Any Continent</h2>
+          <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">
+            Explore delicious foods from various restaurants around the world starting from South
+          east Asia all the way to America </p>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-1 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">Japan</h2>
+          <a href="japan.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">China</h2>
+
+          <a href="china.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-3 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> Thailand </h2>
+
+          <a href="thai.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-4 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> Italy </h2>
+
+          <a href="italy.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-5 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> Russia </h2>
+
+          <a href="russia.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-6 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> Germany </h2>
+
+          <a href="germany.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-7 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> France </h2>
+
+          <a href="france.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-8 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> United Kingdom </h2>
+
+          <a href="uk.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide slide-9 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;"> United States </h2>
+
+          <a href="us.html" class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+    <div class="footer"> Destination </div>
+</body>
+</html>

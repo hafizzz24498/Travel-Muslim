@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Japan </title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <style media="screen">
+  @font-face {
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  body {
+width: 100wh;
+height: 90vh;
+color: #fff;
+background: linear-gradient(-45deg, #332c2c, #5e4e4e ,#988787, #d0c5c5);
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+h1,
+h6 {
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: center;
+position: absolute;
+top: 45%;
+right: 0;
+left: 0;
+}
+    .parallax {
+      /* The image used */
+
+      background-image: url('https://images.pexels.com/photos/1199971/pexels-photo-1199971.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+
+      /* Full height */
+      height: 50%;
+      width: 105%;
+      margin: -10px  -50px -50px -50px;
+      text-align: center;
+
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+    .navigation{
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      margin:-10px -10px 0px -10px;
+      background-color: #000;
+    }
+    .navigation a{
+      float: right;
+      color: white;
+      padding: 20px 40px 20px 40px;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    }
+    .navigation a:hover{
+      margin: 0px;
+      background-color: #dbdbdb;
+    }
+    .crop{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     border: 3px 3px 3px 3px;
+     border-radius: 10px 10px 10px 10px;
+    }
+    .crop img{
+      width: 100%;
+      height: 110%;
+      margin:-10px -10px -10px -10px;
+      padding: 0px 0px 0px 0px;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .comment form{
+      text-align: center;
+      font-family: "Bahnschrift";
+      color: white ;
+    }
+    .comment form input[type="text"]{
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      text-align: center;
+      font-family: "Bahnschrift";
+      color:#991313 ;
+    }
+    .button p[id="demo"]{
+      margin-left: 3%;
+      font-family: "Bahnschrift";
+      text-align: center;
+      margin-bottom: 25px;
+
+    }
+    .button button{
+      height: 10%;
+      background-color:white;
+      font-family: "Bahnschrift";
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
+
+    .comment input[type="here"] {
+      width: 50%;
+      height: 50%;
+      padding: 05px 10px 50px 10px;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      font-family: "Bahnschrift";
+
+    }
+
+    .footer {
+
+      opacity: -50%;
+      font-size: 50%;
+      width: 120%;
+      margin:-10px -20px 0px -10px;
+      overflow: hidden;
+    }
+    .column img{
+      margin-top: 14px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      border: 3px ;
+      border-radius: 10px;
+    }
+    * {
+ box-sizing: border-box;
+      }
+
+/* Create two equal columns that floats next to each other */
+.column{
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ height: 200px;
+ display: table;
+ clear: both;
+
+}
+
+
+  </style>
+
+  <div class="navigation">
+    <a href="newhome.html">Home</a>
+      <a href="index.html">Destination</a>
+      <a href="Background2.html">Background</a>
+    <a href="aboutUs2.html">About Us</a>
+    <img src="travelmuslim logo.png" align="left" width="100px" height="70px"></a>
+  </div>
+
+
+  <div class="crop">
+    <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?cs=srgb&dl=asia-carrot-chopsticks-357756.jpg&fm=jpg" alt="" >
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <h1 style="text-align:center; font-family:Open Sans; margin:450px -20px 5px -10px;">THE HALAL FOOD PLACES OF JAPAN</h1>
+
+<div class="row" style="background-color:white;  border: 3px; 3px; border-radius: 10px;10px;">
+  <div class="column" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/17/3d/98/9b/finished-with-mochi.jpg" alt="Great" width="800" height="550">
+  </div>
+  <div class="column" id="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103696.93978817422!2d139.6431572211436!3d35.68858871594585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.688663!2d139.71314999999998!5e0!3m2!1sen!2smy!4v1556365503456!5m2!1sen!2smy"   style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px; border-radius: 10px;" allowfullscreen></iframe ></div>
+</div>
+
+  <div class="Shinjuku Gyoen Ramen Ouka" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Shinjuku Gyoen Ramen Ouka
+</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="2px" 0px;"=""><b>Special Diets
+Vegetarian Friendly, Halal, Vegan Options
+Meals
+Lunch, Dinner
+CUISINES
+Japanese, Asian, Soups</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +81 3-5925-8426
+</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours:Mon - Thu
+2:00 PM - 10:00 PM
+Fri
+6:00 PM - 10:00 PM
+Sat - Sun
+1:00 PM - 10:00 PM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: 1-11-7 Shinjuku 1st Floor, Shinjuku 160-0022 Tokyo Prefecture</h3>
+  </div>
+
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Annam Indian Restaurant Ginza
+"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103724.95591298731!2d139.69163392052045!3d35.66703162109471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.667336!2d139.76185999999998!5e0!3m2!1sen!2smy!4v1556365790047!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Annam Indian Restaurant Ginza
+" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Annam Indian Restaurant Ginza
+</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Special Diets
+Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options
+Meals
+Lunch, Dinner, Brunch, Drinks, After-hours
+CUISINES
+Pakistani, Indian.</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +44 20 7249 0400</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours: Sun - Sat
+11:00 AM - 12:00 AM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location: 8Chome 10-8, Ginza 8Chome 10Ban Bldg B1F, Ginza, Chuo 104-0061 Tokyo Prefecture
+</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px" >
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Downtown B’s Indian Kitchen" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3241.4764142222607!2d139.73470541525842!3d35.66526958019795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.665245!2d139.737!5e0!3m2!1sen!2smy!4v1556366131577!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Downtown B’s Indian Kitchen" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center; " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Downtown B’s Indian Kitchen</h2>
+  <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Special Diets
+Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options
+Meals
+Lunch, Dinner, Brunch
+CUISINES
+Indian</b></h3><b>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+11:00 AM - 11:30 PM
+</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:3-4-2 Coop Nomura Roppongi 1F, Roppongi, Minato 106-0032 Tokyo Prefecture</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://images.pexels.com/photos/1268549/pexels-photo-1268549.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Halal Wagyu Yakiniku PANGA" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103675.83135188816!2d139.71099372161316!3d35.70482321207585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.704834!2d139.78110999999998!5e0!3m2!1sen!2smy!4v1556366410096!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Halal Wagyu Yakiniku PANGA" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Halal Wagyu Yakiniku PANGA</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>Meals
+Dinner, Drinks, Lunch
+CUISINES
+Korean, Japanese, Barbecue, Asian
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:3-27-9 Taito, Taito 110-0016 Tokyo Prefecture</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Sun
+5:00 PM - 10:00 PM
+Mon - Sat
+11:30 AM - 2:30 PM
+5:00 PM - 11:00 PM</h3>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +81 3-3839-8929</h3></div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/79/fb/b6/photo0jpg.jpg" alt="Salma Tikka & Biryani" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103778.62701054598!2d139.66748041932658!3d35.625702630998134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.62581!2d139.73752!5e0!3m2!1sen!2smy!4v1556367214768!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+  </div>
+
+
+  <div class="Salma Tikka & Biryani" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Salma Tikka & Biryani</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>CUISINES
+Indian, Asian
+Special Diets
+Vegetarian Friendly, Halal, Vegan Options
+Meals
+Lunch, Dinner </b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+4-22-11 Takanawa, Minato 108-0074 Tokyo Prefecture</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+11:00 AM - 3:00 PM
+5:00 PM - 11:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+81 3-3449-5302</h3>
+  </div>
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/17/3d/df/ab/meat-platter.jpg" alt="Gyumon" width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103739.76257400757!2d139.63638482019107!3d35.655634023821634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.655552!2d139.70641999999998!5e0!3m2!1sen!2smy!4v1556367951214!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Gyumon" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Gyumon</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>CUISINES
+Japanese, Barbecue, Asian, Grill
+Special Diets
+Halal
+Meals
+Lunch, Dinner
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:3-14-5 Shibuya, Shibuya 150-0002 Tokyo Prefecture</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Mon - Fri
+8:00 AM - 11:00 PM
+Sat - Sun
+9:00 AM - 11:00 PM</h3>
+     <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +81 3-5469-2911
+</h3>
+  </div>
+
+
+  <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+    <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <img id="myImg" src="https://as1.ftcdn.net/jpg/00/59/95/54/500_F_59955438_f3XhLoXseeJgZVTgN5YfumyUW5F4PgHv.jpg" alt="Halima Kebab Biryani
+"width="800" height="550">
+    </div>
+    <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d103667.10795027342!2d139.71023482180718!3d35.711530510478866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d35.71176!2d139.78028999999998!5e0!3m2!1sen!2smy!4v1556368268838!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+    </div>
+
+  <div class="Halima Kebab Biryani
+" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Halima Kebab Biryani
+</h2>
+    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>CUISINES
+Indian, Asian
+Special Diets
+Halal
+Meals
+Dinner, Brunch
+</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+      3-36-7 Higashi Ueno, Taito 110-0015 Tokyo Prefecture
+    </h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Tue - Fri
+12:00 PM - 11:00 PM
+Sat - Sun
+2:00 AM - 11:00 PM</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +81 3-6672-1796</h3>
+  </div>
+
+<div class="comment">
+  <form action="/action_page.php" id="userform"> Name: <input type="text" name="username"></form>
+<br>
+   <input type="here" name="comment"
+   onfocus="if(this.value==this.defaultValue)this.value=''"
+   onblur="if(this.value=='')this.value=this.defaultValue"
+   value="Enter the text here...." maxlength="500" />
+</div>
+
+<script>
+//this will submit only if the value is not default
+$("#submitBtn").click(function () {
+    if ($("#valueText").val() === "ENTER VALUE")
+    {
+        alert("please insert a valid value");
+        return false;
+    }
+});
+
+//this will put default value if the field is empty
+$("#valueText").blur(function () {
+    if(this.value == ''){
+        this.value = 'ENTER VALUE';
+    }
+});
+
+ //this will empty the field is the value is the default one
+ $("#valueText").focus(function () {
+    if (this.value == 'ENTER VALUE') {
+        this.value = '';
+    }
+});
+</script>
+
+
+<div class="button">
+  <button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your message is submitted!!";
+}
+</script>
+
+</div>
+
+<div class="parallax">
+  <div class="logo" style="text-align:center; padding-top:150px; padding-left: -20px;">
+    <a href="https://www.facebook.com/"><img src="htmlfb.png" width="60" height="70" hspace="70"></a>
+    <a href="https://twitter.com/"><img src="htmltwitter.png"  width="70" height="70"  hspace="70">
+    <a href="https://www.pinterest.com/"><img src="htmlpin.png"  width="60" height="70"  hspace="70">
+    <a href="https://plus.google.com/"><img src="htmlgoogle.png" width="100" height="70"  hspace="70">
+    <a href="https://www.instagram.com/"><img src="htmlinsta.png" width="70" height="70"  hspace="70">
+  </div>
+</div>
+
+<div style="height:0px;background-color:white;font-size:36px">
+</div>
+
+
+  <div class="footer">
+
+<br>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> China </title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <style media="screen">
+  @font-face {
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  body {
+width: 100wh;
+height: 90vh;
+color: #fff;
+background: linear-gradient(-45deg, #332c2c, #5e4e4e ,#988787, #d0c5c5);
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+h1,
+h6 {
+font-family: 'Open Sans';
+font-weight: 300;
+text-align: center;
+position: absolute;
+top: 45%;
+right: 0;
+left: 0;
+}
+    .parallax {
+      /* The image used */
+
+      background-image: url('https://images.pexels.com/photos/724291/pexels-photo-724291.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+
+      /* Full height */
+      height: 50%;
+      width: 105%;
+      margin: -10px  -50px -50px -50px;
+      text-align: center;
+
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+    .navigation{
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      margin:-10px -10px 0px -10px;
+      background-color: #000;
+    }
+    .navigation a{
+      float: right;
+      color: white;
+      padding: 20px 40px 20px 40px;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    }
+    .navigation a:hover{
+      margin: 0px;
+      background-color: #dbdbdb;
+    }
+    .crop{
+     width: 100%;
+      height: 100%;
+     overflow: hidden;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+    .crop img{
+      width: 100%;
+      height: 120%;
+      margin: -10px 0px -35px 0px;
+      padding: 0px 0px 0px 0px;
+      border: 3px 3px 3px 3px;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .comment form{
+      text-align: center;
+      font-family: "Bahnschrift";
+      color: black ;
+    }
+    .comment form input[type="text"]{
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      text-align: center;
+      font-family: "Bahnschrift";
+      color:#991313 ;
+    }
+    .button p[id="demo"]{
+      margin-left: 3%;
+      font-family: "Bahnschrift";
+      text-align: center;
+      margin-bottom: 25px;
+
+    }
+    .button button{
+      height: 10%;
+      background-color:white;
+      font-family: "Bahnschrift";
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 50%;
+    }
+
+    .comment input[type="here"] {
+      width: 50%;
+      height: 50%;
+      padding: 05px 10px 50px 10px;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px ;
+      border-radius: 4px;
+      font-family: "Bahnschrift";
+
+    }
+
+    .footer {
+
+      opacity: -50%;
+      font-size: 50%;
+      width: 120%;
+      margin:-10px -20px 0px -10px;
+      overflow: hidden;
+    }
+    .column img{
+      margin-top: 14px;
+      margin-left: 10px;
+      box-sizing: border-box;
+      border: 3px ;
+      border-radius: 10px;
+    }
+    * {
+ box-sizing: border-box;
+      }
+
+/* Create two equal columns that floats next to each other */
+.column{
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ height: 200px;
+ display: table;
+ clear: both;
+
+}
+
+  </style>
+  <div class="navigation">
+    <a href="newhome.html">Home</a>
+      <a href="index.html">Destination</a>
+      <a href="Background2.html">Background</a>
+    <a href="aboutUs2.html">About Us</a>
+
+    <img src="travelmuslim logo.png" align="left" width="100px" height="70px"></a>
+  </div>
+
+  <div class="crop">
+    <img src="https://i.ndtvimg.com/i/2016-06/noodles-625_625x350_41465896870.jpg?downsize=650:400&output-quality=70&output-format=webp" alt="" >
+  </div>
+<br>
+<br>
+<br>
+<br>
+  <h1 style="text-align:center; font-family:Open Sans; margin:375px -20px 5px -10px;">THE HALAL FOOD PLACES OF CHINA</h1>   <div class="header">
+
+    <div class="row" style="background-color:white;  border: 3px; 3px; border-radius: 10px;10px;">
+      <div class="column" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+        <img id="myImg" src="https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Ganges Indian Restaurant" width="800" height="550">
+      </div>
+      <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97923.5551032158!2d116.3822668494582!3d39.91652993140326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.91668!2d116.45109!5e0!3m2!1sen!2smy!4v1556355734379!5m2!1sen!2smy"  style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px; border-radius: 10px;" allowfullscreen></iframe ></div>
+       </div>
+       <div class="Ganges Indian Restaurant" style="text-align:center; font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+         <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Ganges Indian Restaurant
+         </h2>
+             <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="2px" 0px;"=""><b>
+
+CUISINES
+Indian, Asian
+Special Diets
+Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options
+Meals
+Lunch, Dinner, Brunch, After-hours
+<h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: 13910553244</h3>
+<h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours:Mon - Fri
+  11:30 AM - 8:00 PM
+    Sat
+  11:30 AM - 6:00 PM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:
+      The PLACE Mall, ChaoYang District GuangHua Road 9 , ShiMao TianJie ,B 107, Beijing China</h3>
+        </div>
+
+
+        <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+          <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+            <img id="myImg" src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Punjabi Indian Restaurant
+"width="800" height="550">
+          </div>
+          <div class="column" id="googleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97874.40701972181!2d116.40132855054964!3d39.95089032688738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.950237!2d116.4716!5e0!3m2!1sen!2smy!4v1556356761390!5m2!1sen!2smy"style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+          </div>
+          <div class="Yana" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+            <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Punjabi Kebab</h2>
+              <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>
+Special Diets
+Vegetarian Friendly, Vegan Options, Halal
+Meals
+Brunch, Drinks, Lunch, Dinner, After-hours
+CUISINES
+Indian, Asian, Deli, Contemporary, Healthy</b></h3><b>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +86 10 5867 0221</h3>
+    <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating Hours: Sun
+10:00 AM - 1:00 AM
+Mon - Wed
+10:00 AM - 2:00 AM
+Thu
+10:00 AM - 3:00 AM
+Fri - Sat
+10:00 AM - 5:00 AM</h3>
+    <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:C/8, 1-30, Lucky Street, ChaoyangGongyuan West Rd, Chaoyang Dist. Chaoyang Dist, Beijing 100125 China</h3>
+      </div>
+
+
+    <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+        <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/16/88/93/1b/khan-baba-restaurant.jpg" alt="Khan Baba Restaurant" width="800" height="550">
+      </div>
+      <div class="column" id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97900.51622741528!2d116.3841569499698!3d39.9326399292822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.932693!2d116.45405!5e0!3m2!1sen!2smy!4v1556359171807!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+      </div>
+
+    <div class="Khan Baba Restaurant
+" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+      <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Khan Baba Restaurant
+</h2>
+      <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>CUISINES
+Pakistani, Asian
+Special Diets
+Halal
+Meals
+Lunch, Dinner
+  </b></h3><b>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:
+  Sanlitun Soho, Bld 2, Suite 511 Chaoyang District, Beijing China</h3>
+      <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+  11:00 AM - 11:00 PM</h3>
+       <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +86 10 8527 0411</h3>
+    </div>
+
+    <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+      <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+        <img id="myImg" src="https://images.pexels.com/photos/1833332/pexels-photo-1833332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Khan Baba Restaurant" width="800" height="550">
+      </div>
+      <div class="column" id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97900.51622741528!2d116.3841569499698!3d39.9326399292822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.932693!2d116.45405!5e0!3m2!1sen!2smy!4v1556359688144!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+      </div>
+
+    <div class="Rumi Iranian Cusine
+" style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+      <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Rumi Iranian Cusine
+</h2>
+      <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>
+CUISINES
+Middle Eastern, Persian
+Meals
+Lunch, Dinner
+  </b></h3><b>
+      <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:
+  No.1-1 Gongti North Road, Chaoyang District, Beijing China</h3>
+      <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+  11:00 AM - 11:00 PM</h3>
+       <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+86 10 8454 3838</h3>
+    </div>
+
+
+        <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+          <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+            <img id="myImg" src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Dong lai Shun Restaurant
+" width="800" height="550">
+          </div>
+          <div class="column" id="googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97930.55146808067!2d116.34169524930284!3d39.91163663204884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.91109!2d116.41136999999999!5e0!3m2!1sen!2smy!4v1556360101388!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px;border-radius: 10px;" allowfullscreen></iframe ></div>
+          </div>
+
+        <div class="Dong lai Shun Restaurant
+
+    " style="text-align:center; font-family:Bahnschrift;margin:10px 50px 10px 50px;">
+          <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Rumi Iranian Cusine
+    </h2>
+          <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>
+            CUISINES
+          Chinese, Asian
+          Special Diets
+          Halal
+          Meals
+          Lunch, Dinner
+      </b></h3><b>
+          <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="",   0px;"="">Location:
+    No.198 Wangfujing Street, Beijing China</h3>
+          <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours:Sun - Sat
+      11:00 AM - 11:00 PM</h3>
+           <h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No:+86 10 6513 9661</h3>
+        </div>
+
+              <div class="row" style="background-color:white; border: 3px; 3px; border-radius: 10px;10px" >
+                <div class="column"; style="background-color:white; border: 3px; 3px; border-radius: 10px;10px">
+                    <img id="myImg" src="https://media-cdn.tripadvisor.com/media/photo-s/16/85/e2/54/food.jpg" alt="1001 Nights" width="800" height="550">
+                  </div>
+                  <div class="column" id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d97898.44263500393!2d116.39014985001587!3d39.93408962909165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d39.93389!2d116.46039999999999!5e0!3m2!1sen!2smy!4v1556359549627!5m2!1sen!2smy" style="width:98%; height:550px; margin-top:13px; padding-right: 0px;box-sizing: border-box;border: 3px ;border-radius: 10px;" allowfullscreen></iframe ></div>
+
+                  </div>
+                  <div class="1001 Nights" style="text-align:center;font-family:Bahnschrift; margin:10px 50px 10px 50px;">
+                    <h2 style="text-align:center;  font-family:font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">1001 Nights
+                    <p></p><h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"=""><b>
+                      Special Diets
+        Vegetarian Friendly, Vegan Options, Halal
+        Meals
+        Lunch, Dinner, After-hours
+        CUISINES
+        Lebanese, Middle Eastern, Mediterranean</b></h3><b>
+            <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Location:Gongtrentiyuchang Beilu North Chaoyang, Beijing China<h3 style="text-align:justify;font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Operating hours: Sun - Sat
+        11:00 AM - 11:00 PMs</h3>
+              <h3 style="text-align:justify; font-family: " courier="" new",="" courier,="" monospace;="" padding:="" 0px;"="">Contact No: +86 10 6532 4050</h3></div>
+            </div>
+            <div class="comment">
+              <form action="/action_page.php" id="userform"> Name: <input type="text" name="username"></form>
+            <br>
+               <input type="here" name="comment"
+               onfocus="if(this.value==this.defaultValue)this.value=''"
+               onblur="if(this.value=='')this.value=this.defaultValue"
+               value="Enter the text here...." maxlength="500" />
+            </div>
+
+            <script>
+            //this will submit only if the value is not default
+            $("#submitBtn").click(function () {
+                if ($("#valueText").val() === "ENTER VALUE")
+                {
+                    alert("please insert a valid value");
+                    return false;
+                }
+            });
+
+            //this will put default value if the field is empty
+            $("#valueText").blur(function () {
+                if(this.value == ''){
+                    this.value = 'ENTER VALUE';
+                }
+            });
+
+             //this will empty the field is the value is the default one
+             $("#valueText").focus(function () {
+                if (this.value == 'ENTER VALUE') {
+                    this.value = '';
+                }
+            });
+            </script>
+
+
+            <div class="button">
+              <button onclick="myFunction()">Submit</button>
+
+            <p id="demo"></p>
+
+
+            <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "Your message is submitted!!";
+            }
+            </script>
+
+            </div>
+
+            <div class="parallax">
+              <div class="logo" style="text-align:center; padding-top:150px; padding-left: -20px;">
+                <a href="https://www.facebook.com/"><img src="htmlfb.png" width="60" height="70" hspace="70"></a>
+                <a href="https://twitter.com/"><img src="htmltwitter.png"  width="70" height="70"  hspace="70">
+                <a href="https://www.pinterest.com/"><img src="htmlpin.png"  width="60" height="70"  hspace="70">
+                <a href="https://plus.google.com/"><img src="htmlgoogle.png" width="100" height="70"  hspace="70">
+                <a href="https://www.instagram.com/"><img src="htmlinsta.png" width="70" height="70"  hspace="70">
+              </div>
+            </div>
+
+            <div style="height:0px;background-color:white;font-size:36px">
+            </div>
+
+
+
+
+              <div class="footer">
+
+
+
+            <br>
+              </body>
+            </html>
